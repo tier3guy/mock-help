@@ -27,7 +27,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -95,6 +95,19 @@
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #a9abb1; /* darker shade on hover */
+}
+
+/* THIN SCROLLBAR, HORIZONTAL */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
 }
 
 
